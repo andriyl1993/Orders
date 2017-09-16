@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/angular-ui-notification.min.css' %}"/>
+
+
+    <script type="text/javascript" src="{% static 'js/angular.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/angular-route.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/HeaderCtrl.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/angular-ui-notification.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ngMask.min.js' %}"></script>
+
+    {% if not user.is_authenticated %}
+        <script type="text/javascript" src="{% static 'js/controllers/auth.js' %}"></script>
+    {% endif %}
+</head>
+<body>
+    {% block js %}
+    {% endblock %}
+
+    <div id="site">
+        <ng-app ng-app="OrdersApp">
+            {% include 'header.html' %}
+            {% csrf_token %}
+
+            <!-- Only for logout -->
+            <div ng-controller="HeaderController">
+                {% if user.is_authenticated %}
+                    <div ng-view></div>
+                {% endif %}
+            </div>
+
+            <!-- Only for Auth -->
+            {% if not user.is_authenticated %}
+                <div ng-controller="AuthController">
+                    <div ng-view></div>
+                </div>
+            {% endif %}
+
+            {% block main %}
+            {% endblock %}
+            {% include 'footer.html' %}
+        </ng-app>
+    </div>
+</body>
+</html>

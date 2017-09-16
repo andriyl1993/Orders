@@ -1,0 +1,30 @@
+<div class="form">
+    <form name="LoginForm" ng-submit="login()">
+        <div class="form-element">
+            <div>
+                <label for="username">Ім'я користувача</label>
+            </div>
+            <div>
+                <input type="text" name="username" ng-model="login_data.username" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="password">Пароль</label>
+            </div>
+            <div>
+                <input type="password" name="password" ng-model="login_data.password" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <label for="remember">Запам'ятати мене</label>
+            <input type="checkbox" name="remember" value="0" ng-model="login_data.remember"/>
+        </div>
+        <div class="form-element">
+            <button name="login" type="submit">Авторизуватись</button>
+        </div>
+        <div class="form-element -mgn-t-25">
+            <a href="#login/forgot/">Забули пароль?</a>
+        </div>
+    </form>
+</div>

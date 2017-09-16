@@ -1,0 +1,27 @@
+<div class="form">
+    <form name="RestoreForm" ng-submit="restore_password_send()">
+        <div class="form-element">
+            <div>
+                <label for="code">Код з листа</label>
+            </div>
+            <div>
+                <input type="text" name="code" ng-model="login_restore.code" required/>
+            </div>
+            <div>
+                <label for="password">Пароль</label>
+            </div>
+            <div>
+                <input type="password" name="password" ng-model="login_restore.password" required/>
+            </div>
+            <div>
+                <label for="rep_password">Повторіть пароль</label>
+            </div>
+            <div>
+                <input type="password" name="rep_password" ng-model="login_restore.rep_password" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <button name="restore" type="submit">Надіслати</button>
+        </div>
+    </form>
+</div>

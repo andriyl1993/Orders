@@ -1,0 +1,6 @@
+wrong_class - переданий клас не коректний
+require_field - no some required fields
+invalid_form - форма не пройшла валідацію
+ivalid_login - не вірні дані авторизації
+invalid_signup - не вірні дані реєстрації
+user_not_found - користувач з вказаними даними не знайдений

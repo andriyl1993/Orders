@@ -1,0 +1,15 @@
+<div class="form">
+    <form name="ForgotForm" ng-submit="forgot_password_send()">
+        <div class="form-element">
+            <div>
+                <label for="email" class="font-15">Введіть адресу. На неї буде надіслано лист з посиланням для відновлення паролю</label>
+            </div>
+            <div>
+                <input type="email" name="email" ng-model="forgot_data.email"/>
+            </div>
+        </div>
+        <div class="form-element">
+            <button name="forgot" type="submit">Надіслати</button>
+        </div>
+    </form>
+</div>

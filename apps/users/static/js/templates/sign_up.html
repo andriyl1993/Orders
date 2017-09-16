@@ -1,0 +1,63 @@
+<div class="form">
+    <form name="SignUpForm" ng-submit="signup()">
+        <div class="form-element">
+            <div>
+                <label for="username">Логін</label>
+            </div>
+            <div>
+                <input type="text" name="username" ng-model="signup_data.username" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="username">Прізвище</label>
+            </div>
+            <div>
+                <input type="text" name="last_name" ng-model="signup_data.last_name" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="username">Ім'я</label>
+            </div>
+            <div>
+                <input type="text" name="first_name" ng-model="signup_data.first_name" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="username">Email</label>
+            </div>
+            <div>
+                <input type="text" name="email" ng-model="signup_data.email" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="username">Телефон</label>
+            </div>
+            <div>
+                <input type="text" name="phone" ng-model="signup_data.phone" ng-value="+38" mask-validate='false' mask="+38(099)999-99-99" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="password">Пароль</label>
+            </div>
+            <div>
+                <input type="password" name="password" ng-model="signup_data.password" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <div>
+                <label for="password">Повторіть пароль</label>
+            </div>
+            <div>
+                <input type="password" name="repeat_password" ng-model="signup_data.repeat_password" required/>
+            </div>
+        </div>
+        <div class="form-element">
+            <button name="login" type="submit">Зареєстуватися</button>
+        </div>
+    </form>
+</div>

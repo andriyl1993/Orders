@@ -1,0 +1,16 @@
+{% load static %}
+
+<div>
+    <div id="header" ng-controller="HeaderController"  ng-init="init_data('{{ user.username }}')">
+        <div id="logo">
+            <a href="#/"><img src="{% static 'img/logo_trans.png' %}" alt="logo.png"/></a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li class="menu-item" ng-repeat="elem in menu" ng-if="elem[2] == null || elem[2] == is_auth">
+                    <a href="{$ elem[1] $}" ng-if="elem[1]">{$ elem[0] $}</a><p ng-if="!elem[1]">{$ elem[0] $}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

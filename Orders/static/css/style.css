@@ -1,0 +1,146 @@
+@import "reset.css";
+
+body {
+
+}
+
+label {
+  font-size: 24px;
+}
+
+input.ng-dirty.ng-invalid {
+  border-color: red;
+  border-width: 2px;
+}
+
+#header {
+  overflow: hidden;
+}
+
+#logo {
+  height: 120px;
+  margin-left: 15px;
+  float: left;
+}
+
+#logo img {
+    height: 60%;
+}
+
+#menu {
+  height: 70px;
+  margin: 0 auto;
+  background-color: #2f4254;
+}
+
+#menu ul {
+  padding-left: 40px;
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+.menu-item {
+  float: left;
+  width: 16.6%;
+  font: bold 18px Arial, Verdana, sans-serif;
+}
+
+.menu-item, .menu-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu-item a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.form {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.form-element {
+  margin-bottom: 15px;
+}
+
+.form-element input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.form-element a {
+  text-decoration: none;
+    color: #776363;
+    font: 16px Arial, Verdana, sans-serif;
+}
+
+.form-element button {
+  padding: 6px 12px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+div label {
+  font: 20px Arial, Verdana, sans-serif;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+footer {
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background-color: #e0e8d3;
+}
+
+footer div {
+  display: inline-block;
+}
+
+.-left {
+  float: left;
+}
+
+.-right {
+  float: right;
+}
+
+.-mgn-t-25 {
+  margin-top: 25px;
+}
+
+.-mgn-l-50 {
+  margin-left: 50px;
+}
+
+.-mgn-r-50 {
+  margin-right: 50px;
+}
+
+.active-link {
+  color: #fd8888 !important;
+}
+
+.font-15 {
+  font-size: 15px;
+}
